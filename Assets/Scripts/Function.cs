@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Function : MonoBehaviour
 {
-    int nyawa = 10;
+    public int nyawa;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,13 +18,13 @@ public class Function : MonoBehaviour
 
     }
 
-    public int bilangan(int x, int y, int z)
+    public int bilangan(int x, int y, int z)  //ada pengembalian nilai
     {
         int hasil = x * y * z;
         return hasil;
     }
 
-    public void MinumObat()
+    public void MinumObat() //tidak mengembalikan nilai (tipe void)
     {
         Debug.Log("Pemain Minum Obat");
         Sembuhkan(30);
