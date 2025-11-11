@@ -350,26 +350,14 @@ GameObject:
   m_Component:
   - component: {fileID: 640562280}
   - component: {fileID: 640562279}
-  - component: {fileID: 640562278}
+  - component: {fileID: 640562281}
   m_Layer: 0
-  m_Name: Square (3)
+  m_Name: List
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &640562278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 640562277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 667d8739212c38246af51588ccb6ef41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &640562279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -440,6 +428,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &640562281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640562277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614466169fa6b544a9d5bcb639bd905c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &976902158
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,13 +851,15 @@ GameObject:
   m_Component:
   - component: {fileID: 1415358564}
   - component: {fileID: 1415358563}
+  - component: {fileID: 1415358566}
+  - component: {fileID: 1415358565}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: Array
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1415358563
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -928,6 +930,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1415358565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415358562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339aa94d7a63b3d4383fe308a13a2c31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArrayPlayer: []
+  ArrayNama:
+  - Aan
+  - Ani
+  - Ana
+--- !u!114 &1415358566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415358562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b18b655f41c4c4cb0e78a34fceea38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: nina
+  Level: 200
+  Health: 1
 --- !u!1 &1536039085
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,13 +973,15 @@ GameObject:
   - component: {fileID: 1536039087}
   - component: {fileID: 1536039086}
   - component: {fileID: 1536039088}
+  - component: {fileID: 1536039090}
+  - component: {fileID: 1536039089}
   m_Layer: 0
   m_Name: Class
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1536039086
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1028,6 +1064,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b3a37fa7c190f4eb3dd8f50c265515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1536039089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536039085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7dc2301062c014e9b7eadc837d2e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!114 &1536039090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536039085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b18b655f41c4c4cb0e78a34fceea38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Level: 0
+  Health: 0
 --- !u!1 &1709186553
 GameObject:
   m_ObjectHideFlags: 0

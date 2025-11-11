@@ -12,9 +12,9 @@ public class ListContoh : MonoBehaviour
     {
         Player player = ListPlayer.Find(element => element.Level > 15);
         Debug.Log(player.Name);
-        bool isExsist = ListPlayer.Exists(element => element == "Fadhil");
-        Debug.Log(isExsist);
-        ListPlayer.Insert(1, "Anton");
+        //bool isExsist = ListPlayer.Exists(element => element == "Fadhil");
+        //Debug.Log(isExsist);
+        // ListPlayer.Insert(1, "Anton");
         ListPlayer.RemoveAt(0);
 
     }
