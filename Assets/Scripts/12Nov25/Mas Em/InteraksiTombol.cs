@@ -6,10 +6,13 @@ public class InteraksiTombol : MonoBehaviour
     public KotakTabrak kotakTabrak;
     public int skor;
     public TMP_Text TextSkor;
+    public int nyawa;
+    public TMP_Text TextNyawa;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        nyawa = 3;
+        kotakTabrak.KurangNyawa();
     }
 
     // Update is called once per frame

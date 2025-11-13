@@ -57,11 +57,21 @@ public class KotakTabrak : MonoBehaviour
             TambahSkor();
 
         }
+        else if (collision.gameObject.CompareTag("Bola"))
+        {
+            interaksiTombol.nyawa--;
+            KurangNyawa();
+        }
     }
 
     public void TambahSkor()
     {
         interaksiTombol.TextSkor.text = "skor : " + interaksiTombol.skor.ToString();
+    }
+
+    public void KurangNyawa()
+    {
+        interaksiTombol.TextNyawa.text = "nyawa : " + interaksiTombol.nyawa.ToString();
     }
 
     public enum ArahGerak
