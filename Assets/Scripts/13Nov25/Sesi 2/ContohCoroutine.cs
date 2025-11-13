@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Coroutine : MonoBehaviour
+public class ContohCoroutine : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
