@@ -8,6 +8,7 @@ public class ManagerNov13 : MonoBehaviour
     public TMP_Text textSkor;
     public SquareMove13 squareMove13;
     public GameObject bolaJatuh; // variabel perfab bola jatuh
+    public PemainLompat pemainLompat;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,6 +30,7 @@ public class ManagerNov13 : MonoBehaviour
             //ToggleKiriKanan();
             squareMove13.isMoveRight = false;
             MunculDariAtas();
+            pemainLompat.Lompat();
 
 
         }
